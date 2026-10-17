@@ -1,1 +1,164 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin Demo</title><link rel="stylesheet" href="public/styles.css"></head><body class="portal-page"><main class="dashboard"><p class="eyebrow">ADMIN / FINANCIAL DIRECTOR DEMO</p><h1>Operations overview</h1><div class="metrics"><div><span>Investors</span><strong>—</strong></div><div><span>Pending KYC</span><strong>—</strong></div><div><span>Pending withdrawals</span><strong>—</strong></div></div><div class="notice">Demo UI only. A production admin system needs server-side authorization, segregation of duties, immutable audit logs, reconciliation and regulated financial integrations.</div></main></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="Preview the Northstar Investments fictional administration dashboard design.">
+  <title>Administration Preview — Northstar Investments</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      NORTHSTAR <span>INVESTMENTS</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Demo Dashboard</a>
+      <a href="trust.html">Trust Center</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <p class="eyebrow">NORTHSTAR / CONCEPT PREVIEW</p>
+      <h1>Administration interface</h1>
+
+      <p class="muted">
+        A visual preview of how an internal administration dashboard
+        might organise operational information in a future application.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Static preview — no administrative access.</strong>
+        This page is publicly accessible and has no administrator
+        authentication, authorisation, connected database, or live
+        operational data. Do not use it to manage real customers,
+        verification checks, payments, or withdrawals.
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid4">
+        <article class="card metric">
+          <p class="muted">Investor records</p>
+          <h2>—</h2>
+          <p class="muted">No connected database</p>
+        </article>
+
+        <article class="card metric">
+          <p class="muted">Verification reviews</p>
+          <h2>—</h2>
+          <p class="muted">No verification provider</p>
+        </article>
+
+        <article class="card metric">
+          <p class="muted">Payment reviews</p>
+          <h2>—</h2>
+          <p class="muted">No payment processing</p>
+        </article>
+
+        <article class="card metric">
+          <p class="muted">System status</p>
+          <h2>Demo</h2>
+          <p class="muted">Static interface</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <p class="eyebrow">OVERVIEW</p>
+        <h2>Illustrative operational areas</h2>
+
+        <div class="info-grid">
+          <div>
+            <h3>Account administration</h3>
+            <p>
+              A future secure system could provide authorised staff
+              with controlled account-management tools.
+            </p>
+          </div>
+
+          <div>
+            <h3>Verification workflow</h3>
+            <p>
+              A real verification process would require appropriate
+              providers, privacy controls, and authorised access.
+            </p>
+          </div>
+
+          <div>
+            <h3>Transaction monitoring</h3>
+            <p>
+              Any real payment operations would require secure,
+              auditable server-side processing and appropriate controls.
+            </p>
+          </div>
+
+          <div>
+            <h3>Audit history</h3>
+            <p>
+              A production system should record important administrative
+              actions and restrict access to authorised personnel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <p class="eyebrow">SECURITY REQUIREMENTS</p>
+        <h2>What a production admin panel needs</h2>
+
+        <ul>
+          <li>Server-side authentication and role-based authorisation.</li>
+          <li>Restricted access to administrative routes and data.</li>
+          <li>Secure session handling and appropriate multi-factor authentication.</li>
+          <li>Validated server-side operations rather than trusted browser controls.</li>
+          <li>Auditable records of sensitive administrative actions.</li>
+          <li>Careful handling of personal information and security incidents.</li>
+          <li>Tested backups, monitoring, and recovery procedures.</li>
+        </ul>
+
+        <p class="muted">
+          Hiding buttons or adding a client-side password prompt would
+          not make this static page a secure administration system.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="quick">
+        <a href="dashboard.html">View demo portfolio →</a>
+        <a href="trust.html">Read Trust Center →</a>
+        <a href="support.html">Support information →</a>
+        <a href="index.html">Return to homepage →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="current-year"></span> Northstar Investments.
+      Fictional demonstration only.
+    </p>
+
+    <div>
+      <a href="trust.html">Trust Center</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
