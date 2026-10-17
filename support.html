@@ -1,1 +1,168 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Private Investor Support</title><link rel="stylesheet" href="public/styles.css"></head><body class="portal-page"><main class="content narrow"><a class="brand" href="dashboard.html">NORTHSTAR <span>INVESTMENTS</span></a><p class="eyebrow">PRIVATE INVESTOR SUPPORT</p><h1>How can we help?</h1><form onsubmit="event.preventDefault(); alert('Demo: support ticket created.');"><label>Category<select><option>Account</option><option>Investment</option><option>Portfolio</option><option>Deposit</option><option>Withdrawal</option><option>Documents</option><option>Verification</option></select></label><label>Subject<input required></label><label>Message<textarea rows="7" required></textarea></label><button class="button">Send private message</button></form></main></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="Learn about support options for the Northstar Investments demonstration website.">
+  <title>Support — Northstar Investments</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      NORTHSTAR <span>INVESTMENTS</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Demo Dashboard</a>
+      <a href="trust.html">Trust Center</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <p class="eyebrow">NORTHSTAR HELP CENTER</p>
+      <h1>How can we help?</h1>
+
+      <p class="muted">
+        Find information about the Northstar demonstration experience
+        and understand which features are currently available.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Support form not connected.</strong>
+        This is a demonstration website. Messages cannot currently be
+        submitted to a support team, and no support tickets are created.
+        Do not enter passwords, payment details, identity documents,
+        or other sensitive personal information.
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid2">
+        <article class="card">
+          <p class="eyebrow">ACCOUNT ACCESS</p>
+          <h2>Demo account</h2>
+          <p>
+            The dashboard is a public demonstration. There are no real
+            investor accounts, passwords, or private account records.
+          </p>
+          <a href="login.html">Open demo entry →</a>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">PORTFOLIO</p>
+          <h2>Sample balances</h2>
+          <p>
+            Portfolio figures are fictional examples for showing how
+            a financial dashboard could work. They are not funds,
+            investments, or withdrawable balances.
+          </p>
+          <a href="dashboard.html">View demo dashboard →</a>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">INVESTMENT INFORMATION</p>
+          <h2>Explore asset examples</h2>
+          <p>
+            Read educational information about illustrative equity
+            and Bitcoin holdings. No trades or purchases are available.
+          </p>
+          <a href="investment.html?asset=equity">Explore examples →</a>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">TRUST AND SAFETY</p>
+          <h2>Understand the platform</h2>
+          <p>
+            Learn what the website does, what it does not do, and why
+            you should verify any real financial service independently.
+          </p>
+          <a href="trust.html">Visit the Trust Center →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <p class="eyebrow">COMMON QUESTIONS</p>
+        <h2>Frequently asked questions</h2>
+
+        <details>
+          <summary>Can I deposit money into Northstar?</summary>
+          <p>
+            No. This demonstration does not accept deposits or process
+            payments.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I withdraw the sample cash balance?</summary>
+          <p>
+            No. The displayed figures are fictional and have no cash value.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is my demo dashboard private?</summary>
+          <p>
+            No. This is a static website, and the demo pages are publicly
+            accessible. Do not treat the dashboard as a private account
+            or enter sensitive information.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does submitting a message contact Northstar?</summary>
+          <p>
+            There is currently no connected support-ticket system or
+            contact form. This page only provides information.
+          </p>
+        </details>
+
+        <details>
+          <summary>Will real investment services be added?</summary>
+          <p>
+            Any future real-money service would require appropriate
+            legal and regulatory review, verified providers, secure
+            infrastructure, and properly tested integrations before
+            it could be offered.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="muted">
+        Northstar Investments is a fictional investment-platform
+        demonstration. This page is informational and does not provide
+        financial, legal, or investment advice.
+      </p>
+      <a href="index.html">← Return to homepage</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="current-year"></span> Northstar Investments.
+      Fictional demonstration only.
+    </p>
+    <div>
+      <a href="trust.html">Trust Center</a>
+      &nbsp;·&nbsp;
+      <a href="dashboard.html">Demo Dashboard</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
