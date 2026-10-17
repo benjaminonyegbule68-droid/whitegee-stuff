@@ -1,6 +1,164 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investor Dashboard</title><link rel="stylesheet" href="public/styles.css"></head>
-<body class="portal-page"><header class="nav portal-nav"><a class="brand" href="index.html">NORTHSTAR <span>INVESTMENTS</span></a><nav><a href="dashboard.html">Dashboard</a><a href="investment.html">Investments</a><a href="support.html">Support</a><a href="index.html">Sign out</a></nav></header>
-<main class="dashboard"><div class="welcome"><div><p class="eyebrow">INVESTOR PORTAL</p><h1>Welcome, Investor</h1></div><span class="status">Demo account</span></div>
-<div class="metrics"><div><span>Portfolio value</span><strong>$250,000</strong></div><div><span>Total invested</span><strong>$225,000</strong></div><div><span>Available cash</span><strong>$25,000</strong></div></div>
-<section class="dash-section"><div class="section-head"><h2>Your investments</h2><a href="investment.html">Explore</a></div><div class="table"><div class="tr th"><span>Asset</span><span>Type</span><span>Value</span><span>Status</span></div><div class="tr"><span>Global Equity</span><span>Equity</span><span>$150,000</span><span class="status">Demo</span></div><div class="tr"><span>Bitcoin</span><span>Digital asset</span><span>$75,000</span><span class="status">Demo</span></div></div></section>
-<div class="quick"><a href="support.html">Private Support</a><a href="trust.html">Documents & Trust</a><a href="admin.html">Admin Demo</a></div></main></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="Explore a fictional Northstar Investments portfolio dashboard.">
+  <title>Demo Portfolio — Northstar Investments</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      NORTHSTAR <span>INVESTMENTS</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="investment.html?asset=equity">Equity Example</a>
+      <a href="investment.html?asset=bitcoin">Bitcoin Example</a>
+      <a href="support.html">Support</a>
+      <a href="trust.html">Trust Center</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <p class="eyebrow">INVESTOR EXPERIENCE / DEMO</p>
+      <h1>Portfolio overview</h1>
+      <p class="muted">
+        Explore how an investment dashboard might present portfolio
+        information. All amounts below are fictional demonstration values.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Simulation only — no real funds.</strong>
+        This website does not hold money, provide a brokerage account,
+        execute investments, accept deposits, or process withdrawals.
+        The figures below have no cash value.
+      </div>
+    </section>
+
+    <section class="grid4" aria-label="Sample portfolio metrics">
+      <article class="card metric">
+        <p class="muted">Sample portfolio value</p>
+        <h2>$250,000</h2>
+        <p class="muted">Fictional example</p>
+      </article>
+
+      <article class="card metric">
+        <p class="muted">Sample invested amount</p>
+        <h2>$225,000</h2>
+        <p class="muted">Not actual investments</p>
+      </article>
+
+      <article class="card metric">
+        <p class="muted">Illustrative cash balance</p>
+        <h2>$25,000</h2>
+        <p class="muted">Not available to withdraw</p>
+      </article>
+
+      <article class="card metric">
+        <p class="muted">Account status</p>
+        <h2>Demo</h2>
+        <p class="muted">No real investor account</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SAMPLE ALLOCATION</p>
+          <h2>Example holdings</h2>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <article class="card">
+          <p class="eyebrow">EQUITY EXAMPLE</p>
+          <h3>Illustrative equity holding</h3>
+          <p class="muted">
+            Sample allocation: $150,000
+          </p>
+          <p>
+            This is a fictional portfolio entry for demonstrating how
+            an equity holding could appear in a dashboard. It does not
+            represent shares held by Northstar or the visitor.
+          </p>
+          <a class="button button-secondary" href="investment.html?asset=equity">
+            Explore equity example
+          </a>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">DIGITAL ASSET EXAMPLE</p>
+          <h3>Illustrative Bitcoin holding</h3>
+          <p class="muted">
+            Sample allocation: $75,000
+          </p>
+          <p>
+            This is a fictional portfolio entry. No Bitcoin is held,
+            purchased, or managed through this website.
+          </p>
+          <a class="button button-secondary" href="investment.html?asset=bitcoin">
+            Explore Bitcoin example
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <p class="eyebrow">YOUR DEMO EXPERIENCE</p>
+        <h2>Explore the platform</h2>
+        <p>
+          Browse the example investment pages and learn about the
+          information an investment service should disclose before
+          accepting customers or funds.
+        </p>
+
+        <div class="quick">
+          <a href="investment.html?asset=equity">Equity example →</a>
+          <a href="investment.html?asset=bitcoin">Bitcoin example →</a>
+          <a href="trust.html">Trust and risk information →</a>
+          <a href="support.html">Support page →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="muted">
+        Northstar Investments is currently a demonstration website,
+        not a licensed or operational investment service. Do not send
+        money or sensitive personal information through this website.
+        Investment products can lose value, including the entire amount
+        invested.
+      </p>
+
+      <a href="index.html">← Return to homepage</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="current-year"></span> Northstar Investments.
+      Fictional demonstration only.
+    </p>
+    <div>
+      <a href="trust.html">Trust Center</a>
+      &nbsp;·&nbsp;
+      <a href="support.html">Support</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
