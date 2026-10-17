@@ -1,2 +1,64 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investor Login</title><link rel="stylesheet" href="public/styles.css"></head>
-<body class="portal-page"><main class="auth"><a class="brand" href="index.html">NORTHSTAR <span>INVESTMENTS</span></a><div class="auth-card"><p class="eyebrow">INVESTOR PORTAL</p><h1>Welcome back.</h1><form onsubmit="event.preventDefault(); location.href='dashboard.html'"><label>Email<input type="email" required></label><label>Password<input type="password" required></label><button class="button">Continue</button><p class="muted">Demo only — authentication is not connected to a real identity system.</p></form><a href="register.html">Create an account</a></div></main></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="Enter the Northstar Investments fictional investment simulation.">
+  <title>Demo Entry — Northstar Investments</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body class="portal-page">
+  <main class="auth">
+    <a class="brand" href="index.html" aria-label="Northstar Investments home">
+      NORTHSTAR <span>INVESTMENTS</span>
+    </a>
+
+    <section class="auth-card" aria-labelledby="page-title">
+      <p class="eyebrow">DEMO ACCESS</p>
+
+      <h1 id="page-title">Welcome to Northstar.</h1>
+
+      <p>
+        Explore a sample investor dashboard, fictional portfolio balances,
+        and example investment information.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Simulation only.</strong>
+        This is a static website demonstration. There is no real investor
+        account, authentication system, deposit facility, withdrawal
+        facility, or investment execution.
+      </div>
+
+      <div style="margin-top: 24px;">
+        <a
+          class="button"
+          href="dashboard.html"
+          style="width: 100%;"
+        >
+          Enter Demo Dashboard →
+        </a>
+      </div>
+
+      <p class="muted" style="margin-top: 20px; margin-bottom: 0;">
+        You do not need to provide an email address, password, phone number,
+        identity document, or payment information.
+      </p>
+
+      <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.09);">
+        <p style="margin-bottom: 8px;">New to Northstar?</p>
+        <a href="register.html">Learn about the demo experience →</a>
+      </div>
+    </section>
+
+    <p class="muted" style="text-align: center; font-size: 0.8rem;">
+      <a href="trust.html">About this demo</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Back to home</a>
+    </p>
+  </main>
+</body>
+</html>
