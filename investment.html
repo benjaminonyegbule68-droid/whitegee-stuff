@@ -1,1 +1,206 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investment Opportunity</title><link rel="stylesheet" href="public/styles.css"></head><body class="portal-page"><header class="nav portal-nav"><a class="brand" href="index.html">NORTHSTAR <span>INVESTMENTS</span></a><nav><a href="dashboard.html">Dashboard</a><a href="investment.html">Investments</a><a href="support.html">Support</a></nav></header><main class="content"><p class="eyebrow">INVESTMENT OPPORTUNITY</p><h1 id="title">Global Equity</h1><p class="lead" id="desc">Review the opportunity, fees, risks and applicable terms before making any investment decision.</p><div class="info-grid"><div><h3>Investment type</h3><p id="type">Equity</p></div><div><h3>Liquidity</h3><p>See product documentation.</p></div><div><h3>Fees</h3><p>Disclosed before commitment.</p></div><div><h3>Risk</h3><p>Capital is at risk; values may rise or fall.</p></div></div><div class="notice">Demo content. Real investment execution requires verified legal, regulatory, brokerage, custody and payment integrations.</div></main><script>const p=new URLSearchParams(location.search);if(p.get('asset')==='bitcoin'){title.textContent='Bitcoin';desc.textContent='Explore Bitcoin exposure with clear information about volatility, custody, liquidity and fees.';type.textContent='Digital asset';}</script></body></html>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0e">
+  <meta name="description" content="Explore fictional equity and Bitcoin examples in the Northstar Investments simulation.">
+  <title>Investment Examples — Northstar Investments</title>
+  <link rel="stylesheet" href="public/styles.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      NORTHSTAR <span>INVESTMENTS</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Demo Dashboard</a>
+      <a href="trust.html">Trust Center</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <p class="eyebrow">NORTHSTAR LEARNING EXPERIENCE</p>
+      <h1 id="product-title">Investment Example</h1>
+
+      <p class="muted" id="product-description">
+        Explore a fictional investment example.
+      </p>
+
+      <div class="notice" role="note">
+        <strong>Educational simulation only.</strong>
+        This page does not offer an investment product for purchase.
+        Northstar does not execute trades, hold assets, accept deposits,
+        or process withdrawals. Values and allocations shown here are
+        illustrative, not live market data.
+      </div>
+    </section>
+
+    <section class="grid2">
+      <article class="card">
+        <p class="eyebrow">ASSET CATEGORY</p>
+        <h2 id="product-type">Example asset</h2>
+        <p id="product-overview">
+          This page demonstrates how an asset information page could be
+          structured.
+        </p>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">ILLUSTRATIVE ALLOCATION</p>
+        <h2 id="sample-value">$150,000</h2>
+        <p class="muted" id="sample-label">
+          Fictional example value — not money held or invested.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <p class="eyebrow">UNDERSTAND THE RISKS</p>
+        <h2>What to consider</h2>
+
+        <div class="info-grid">
+          <div>
+            <h3>Market risk</h3>
+            <p>
+              Asset prices can rise or fall. You could lose some or all
+              of the money invested in a real investment.
+            </p>
+          </div>
+
+          <div>
+            <h3>Fees and costs</h3>
+            <p>
+              Real investment services should disclose applicable
+              charges, spreads, management fees, and other costs before
+              a customer commits funds.
+            </p>
+          </div>
+
+          <div>
+            <h3>Liquidity</h3>
+            <p>
+              The ability to sell an asset and receive proceeds depends
+              on the asset, market conditions, provider rules, and
+              settlement arrangements.
+            </p>
+          </div>
+
+          <div>
+            <h3>Verification</h3>
+            <p>
+              Before using a real investment provider, independently
+              verify its legal identity, regulatory status, custody
+              arrangements, and applicable investor protections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Explore another example</h2>
+        <p>
+          Switch between the fictional asset categories or return to
+          the sample portfolio dashboard.
+        </p>
+
+        <div class="quick">
+          <a href="investment.html?asset=equity">Equity example →</a>
+          <a href="investment.html?asset=bitcoin">Bitcoin example →</a>
+          <a href="dashboard.html">Demo dashboard →</a>
+          <a href="trust.html">Trust Center →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="muted">
+        This is educational demonstration content, not financial advice,
+        a solicitation, or an offer to buy or sell securities or digital
+        assets. No real transactions are available through this website.
+      </p>
+      <a href="index.html">← Return to homepage</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="current-year"></span> Northstar Investments.
+      Fictional demonstration only.
+    </p>
+    <div>
+      <a href="trust.html">Trust Center</a>
+      &nbsp;·&nbsp;
+      <a href="support.html">Support</a>
+      &nbsp;·&nbsp;
+      <a href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const titleElement = document.getElementById("product-title");
+      const descriptionElement =
+        document.getElementById("product-description");
+      const typeElement = document.getElementById("product-type");
+      const overviewElement =
+        document.getElementById("product-overview");
+      const valueElement = document.getElementById("sample-value");
+      const labelElement = document.getElementById("sample-label");
+
+      const params = new URLSearchParams(window.location.search);
+      const requestedAsset = (
+        params.get("asset") || "equity"
+      ).toLowerCase();
+
+      const assets = {
+        equity: {
+          title: "Equity Example",
+          description:
+            "Learn how a fictional equity holding might be presented in an investment dashboard.",
+          type: "Equity",
+          overview:
+            "Equities represent ownership interests in companies. Their prices can fluctuate based on company performance, market conditions, and other factors. This page does not represent actual share ownership.",
+          value: "$150,000",
+          label:
+            "Fictional equity allocation — no shares are owned through this demo."
+        },
+        bitcoin: {
+          title: "Bitcoin Example",
+          description:
+            "Explore a fictional digital-asset example for educational purposes.",
+          type: "Bitcoin",
+          overview:
+            "Bitcoin is a digital asset that can experience substantial price volatility. This page does not provide a wallet, exchange, custody service, or Bitcoin purchase facility.",
+          value: "$75,000",
+          label:
+            "Fictional Bitcoin allocation — no Bitcoin is held or purchased through this demo."
+        }
+      };
+
+      const asset = assets[requestedAsset] || assets.equity;
+
+      document.title =
+        asset.title + " — Northstar Investments";
+
+      titleElement.textContent = asset.title;
+      descriptionElement.textContent = asset.description;
+      typeElement.textContent = asset.type;
+      overviewElement.textContent = asset.overview;
+      valueElement.textContent = asset.value;
+      labelElement.textContent = asset.label;
+
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
