@@ -1,12 +1,11 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090b0e">
-  <meta name="description" content="Enter the Northstar Investments fictional investment simulation.">
-  <title>Demo Entry — Northstar Investments</title>
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="description" content="Sign in to your Northstar Investments account.">
+  <title>Sign in — Northstar Investments</title>
   <link rel="stylesheet" href="public/styles.css">
 </head>
 
@@ -17,47 +16,52 @@
     </a>
 
     <section class="auth-card" aria-labelledby="page-title">
-      <p class="eyebrow">DEMO ACCESS</p>
-
-      <h1 id="page-title">Welcome to Northstar.</h1>
-
+      <p class="eyebrow">Account access</p>
+      <h1 id="page-title">Sign in</h1>
       <p>
-        Explore a sample investor dashboard, fictional portfolio balances,
-        and example investment information.
+        Enter your credentials to open your portfolio dashboard.
       </p>
 
-      <div class="notice" role="note">
-        <strong>Simulation only.</strong>
-        This is a static website demonstration. There is no real investor
-        account, authentication system, deposit facility, withdrawal
-        facility, or investment execution.
-      </div>
+      <form action="dashboard.html" method="get" style="margin-top: 22px;">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="username"
+            placeholder="you@example.com"
+            required
+          >
+        </div>
 
-      <div style="margin-top: 24px;">
-        <a
-          class="button"
-          href="dashboard.html"
-          style="width: 100%;"
-        >
-          Enter Demo Dashboard →
-        </a>
-      </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autocomplete="current-password"
+            placeholder="••••••••"
+            required
+          >
+        </div>
 
-      <p class="muted" style="margin-top: 20px; margin-bottom: 0;">
-        You do not need to provide an email address, password, phone number,
-        identity document, or payment information.
-      </p>
+        <button class="button button-full" type="submit">
+          Sign in
+        </button>
+      </form>
 
-      <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.09);">
-        <p style="margin-bottom: 8px;">New to Northstar?</p>
-        <a href="register.html">Learn about the demo experience →</a>
+      <div style="margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border-soft);">
+        <p style="margin-bottom: 6px;">New to Northstar?</p>
+        <a href="register.html">Create an account →</a>
       </div>
     </section>
 
-    <p class="muted" style="text-align: center; font-size: 0.8rem;">
-      <a href="trust.html">About this demo</a>
+    <p class="muted" style="text-align: center; font-size: 0.82rem; margin-top: 20px;">
+      <a href="trust.html">Trust Center</a>
       &nbsp;·&nbsp;
-      <a href="index.html">Back to home</a>
+      <a href="index.html">Home</a>
     </p>
   </main>
 </body>
